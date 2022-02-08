@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery [Effects and Animations]</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>jQuery Course | Effects and Animations</h1>
+        </header>
+        <div id="container">
+            <div id="inOut" class="separator">
+                <button id="compareFadeOut" class="compare">Fade Out - Compare All 4</button>
+                <div class="subContainer">
+                    <button id="btnFadeOut">Fade Out</button>
+                    <h2 id="box1">Hello World</h2>
+                    <button id="btnFadeIn">Fade In</button>
+                </div>
+                <div class="subContainer">
+                    <button id="btnFadeOutFast">Fade Out Fast</button>
+                    <h2 id="box2">Hello World</h2>
+                    <button id="btnFadeInSlow">Fade In Slow</button>
+                </div>
+                <div class="subContainer">
+                    <button id="btnFadeOutFastMs">Fade Out Fast in MS</button>
+                    <h2 id="box3">Hello World</h2>
+                    <button id="btnFadeInSlowMs">Fade In Slow in MS</button>
+                </div>
+                <div class="subContainer">
+                    <button id="btnFadeOutMsDisable" class="special">Fade Out Fast in MS*</button>
+                    <h2 id="box4">Hello World</h2>
+                    <button id="btnFadeInMsDisable" class="special">Fade In Slow in MS*</button>
+                </div>
+                <button id="compareFadeIn" class="compare">Fade In - Compare All 4</button>
+            </div>
+            <div id="toggle" class="separator">
+                <div class="subContainer">
+                    <button id="btnFadeTog">Fade Toggle</button>
+                    <h2 id="box5">Hello World</h2>
+                </div>
+            </div>
+            <div class="separator">
+                <div class="subContainer wider">
+                    <div class="btnContainer">
+                        <button id="btnSlideDown">Slide Down</button>
+                        <button id="btnSlideUp">Slide Up</button>
+                        <button id="btnSlideTog">Slide Toggle</button>
+                    </div>
+                    <h2 id="box6">Hello World</h2>
+                    <button id="btnStop">Stop Slide</button>
+                </div>
+            </div>
+            <div class="separator multiSubs">
+                <div class="subContainer wider">
+                    <p><em>Note:</em> The item you would like to move <em><strong>must</strong></em> have a position of <strong>relative</strong>.</p>
+                    <div class="btnContainer">
+                        <button id="btnMoveLeft">Move Left</button>
+                        <button id="btnMoveCenter">Move Center</button>
+                        <button id="btnMoveRight">Move Right</button>
+                        <button id="btnMoveAround">Move Around</button>
+                        <button id="btnResetMove">Reset</button>
+                    </div>
+                    <h2 id="box7">Hello World</h2>
+                </div>
+                <div class="subContainer wider">
+                    <div class="btnContainer">
+                        <button id="btnLeftGrow">Move Left While Growing</button>
+                        <button id="btnLeftShrink">Move Left While Shrinking</button>
+                        <button id="btnReset">Reset</button>
+                        <button id="btnRightFade">Move Right While Fading</button>
+                        <button id="btnRightGrowFont">Move Right While Increasing Font</button>
+                    </div>
+                    <h2 id="box8">Hello World</h2>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

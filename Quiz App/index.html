@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>A "Get To Know You" Quiz</h1>
+    <div id="quiz">
+        <div id="screen1">
+            <h2>Welcome to our little quiz!</h2>
+            <p>We're going to ask you some questions to get to know you.</p>
+            <p>There are only 3 screens of questions and on the 4th screen we'll go over what we learned together.</p>
+            <p>Click "Continue" to get started!</p>
+        </div>
+        <div id="screen2">
+            <h2>Tell us a bit about yourself.</h2>
+            <div>
+                <label for="name">Your Name</label></br>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="location">Your Location</label></br>
+                <input type="text" name="location" id="location">
+            </div>
+            <div>
+                <label for="occupation">Occupation</label></br>
+                <input type="text" name="occupation" id="occupation">
+            </div>
+        </div>
+        <div id="screen3">
+            <h2>Let's learn some of the fun stuff!</h2>
+            <div>
+                <div id="hobbies">
+                    <h3>Pick a couple hobbies:</h3>
+                    <input type="checkbox" name="surfing" id="surfing">
+                    <label for="surfing">Surfing</label></br>
+                    <input type="checkbox" name="hiking" id="hiking">
+                    <label for="hiking">Hiking</label></br>
+                    <input type="checkbox" name="art" id="art">
+                    <label for="art">Art</label></br>
+                    <input type="checkbox" name="reading" id="reading">
+                    <label for="reading">Reading</label></br>
+                    <input type="checkbox" name="gaming" id="gaming">
+                    <label for="gaming">Gaming</label></br>
+                    <input type="checkbox" name="movies" id="movies">
+                    <label for="movies">Movies</label>
+                </div>
+            </div>
+            <div class="centered">
+                <label for="color"><strong>Pick your favorite color</strong></label>
+                <input type="color" id="color">
+            </div>
+            <div class="centered">
+                <label for="animal"><strong>Pick your favorite animal</strong></label>
+                <select id="animal">
+                    <option value="select" disabled="true" selected="true">Select One...</option>
+                    <option value="dogs 🐕">Dog</option>
+                    <option value="cats 🐈">Cat</option>
+                    <option value="birds 🦜">Bird</option>
+                    <option value="reptiles 🦖">Reptile</option>
+                    <option value="giraffes 🦒">Giraffe</option>
+                    <option value="hippos 🦛">Hippo</option>
+                    <option value="llamas 🦙">Llama</option>
+                    <option value="sheep 🐑">Sheep</option>
+                    <option value="rhinos 🦏">Rhino</option>
+                    <option value="all animals 🦄">All Animals</option>
+                </select>
+            </div>
+        </div>
+        <div id="screen4">
+            <h2>Anything Else?</h2>
+            <div class="centered">
+                <label for="birthday">What's your birthday?</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <div class="centered">
+                <label for="season">Pick your favorite season</label>
+                <select id="season">
+                    <option value="select" disabled="true" selected="true">Select One...</option>
+                    <option value="winter ❄">Winter</option>
+                    <option value="spring 🌸">Spring</option>
+                    <option value="summer 🌳">Summer</option>
+                    <option value="fall 🍂">Fall</option>
+                </select>
+            </div>
+            <div class="centered">
+                <label for="favSite">Enter your favorite website URL below</label>
+                <input type="url" name="favSite" id="favSite">
+            </div>
+        </div>
+        <div id="screen5">
+            <h2>Here's what we found out about you - <span id="userName"></span></h2>
+            <div id="birthdayBanner">
+                <img src="birthday.gif" alt="It's Your Birthday!!!" height="300px" />
+            </div>
+            <p class="spaced">You're located in <span id="userLocation"></span> and you work as a(an) <span id="userOccupation"></span>.</p>
+            <p class="spaced">You're multifaceted by keeping interests in <span id="userHobbies"></span> and like <span id="userAnimals"></span>.</p>
+            <p class="spaced">Your birthday is on <span id="userBirthday"></span> which is <span id="yesNoMaybe"></span> during your favorite season of <span id="userSeason"></span>.</p>
+            <p class="spaced">P.S. You enjoy browsing the following website...no judgement...but maybe a little bit:</p>
+            <iframe src="" width="1000" height="500" id="userSite"></iframe>
+            <p class="spaced" id="userColor"></p>
+        </div>
+        <div class="btnDiv">
+            <button id="prevBtn">Back</button>
+            <button id="nextBtn">Continue</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

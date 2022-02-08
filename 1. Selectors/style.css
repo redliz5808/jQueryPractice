@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5px;
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(92, 90, 90);
+    color: white;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+.callout {
+    font-weight: bold;
+    font-size: 52px;
+    color: red;
+    text-decoration: underline;
+    border: 4px solid brown;
+}

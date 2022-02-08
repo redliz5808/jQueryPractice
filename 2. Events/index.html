@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery [Events]</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>jQuery Course | Events</h1>
+        </header>
+        <div id="container">
+            <div class="subContainer">
+                <h3>Mouse Events</h3>
+                <button id="btn1">Hide Paragraph</button>
+                <button id="btn2">Show Paragraph</button>
+                <button id="btn3">Toggle Paragraph</button>
+                <button id="btn4">Double-click to change Paragraph Color</button>
+
+                <p class="para1">
+                    Hover over this paragraph to toggle it from view. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Hic cupiditate rerum maxime obcaecati nihil illum perferendis? Distinctio nobis
+                    quibusdam sed eveniet dolore soluta adipisci tempore.
+                </p>
+            </div>
+            <div class="subContainer">
+                <h3 class="heading3">
+                    Click and hold on this heading to make Paragraph 2 disappear. Release to make Paragraph 2 reappear
+                </h3>
+                <p class="para2">
+                    This is paragraph 2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cupiditate rerum
+                    maxime obcaecati nihil illum perferendis? Distinctio nobis quibusdam sed eveniet dolore soluta
+                    adipisci tempore.
+                </p>
+            </div>
+            <div class="subContainer">
+                <button id="btn5">Log Event Info</button>
+            </div>
+            <div class="subContainer">
+                <h2>Mouse Coordinates:</h2>
+                <h3 id="coords"></h3>
+            </div>
+            <div id="formStuff" class="subContainer">
+                <form id="form">
+                    <label for="name">Name (note: when typing, the value will appear in the console)</label>
+                    <input type="text" name="name" id="name" />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                    <label for="gender">Gender (note: once selected, the value will appear in the console)</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="nonbinary">Non-Binary</option>
+                        <option value="other">Other/Prefer not to Say</option>
+                    </select>
+                    <input type="submit" value="Submit" />
+                </form>
+                <div id="submittedForm">
+                    <p id="nameField"></p>
+                    <p id="emailField"></p>
+                    <p id="genderField"></p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(92, 90, 90);
+    color: white;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+p,
+div,
+button,
+h3 {
+    margin: 15px 0px;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+li {
+    margin-left: 15px;
+}
+.callout {
+    color: blue;
+    background-color: yellow;
+    border: 5px dashed black;
+}
+
+.purple {
+    color: white;
+    background-color: purple;
+}
+
+#span1 {
+    color: black;
+    background-color: white;
+}
+
+#span2 {
+    color: white;
+    background-color: darkgrey;
+}
+
+#links {
+    font-size: 24px;
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "firstName": "Beth",
+        "lastName": "Franklin",
+        "email": "beth@grythealth.com"
+    },
+    {
+        "firstName": "Ben",
+        "lastName": "Valence",
+        "email": "ben@grythealth.com"
+    },
+    {
+        "firstName": "Lenore",
+        "lastName": "Watson",
+        "email": "lenore@grythealth.com"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Aleksandrowicz",
+        "email": "daz@grythealth.com"
+    },
+    {
+        "firstName": "Leah",
+        "lastName": "Hennessey",
+        "email": "leah@grythealth.com"
+    }
+]
