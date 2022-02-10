@@ -281,7 +281,6 @@ $(document).ready(() => {
 
     $(":text,input[type='date'],input[type='url'],input[type='color']").change((e) => {
         userObject[e.target.id] = e.target.value;
-        console.log(userObject);
     });
 
     $("select").change((e) => {
